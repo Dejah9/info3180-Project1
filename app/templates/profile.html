@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="card">
+    <div  class= "card-body">
+        <div class="top">
+            <div class ="pic">
+              <img class="card-img-top" src="{{url_for('static',filename='me.jpg')}}" alt="Profile pic">
+            </div>
+            <h4 class="card-title">Khadejah Hylton</h4>
+            <h3>@k_dejah9</h3>
+            <h2>Kingston, Jamaica</h2>
+            <h2>Joined {{ date_joined }}<</h2>
+        </div>
+    </div>
+    <div class="aboutMe">
+        <p class="card-text">I am a student of the University of the West Indies. You seeing this is proof that I learned flask.</p>
+        
+        <div class="container">
+        <div class="rows">
+                <div class="col-">
+                    <h3 class="post">
+                        79
+                    </h3>
+                    <p class= "text-muted">POST</p>
+                </div>
+              
+                <div class="col-">
+                    <h3 class="following">
+                        258
+                    </h3>
+                      <p class= "text-muted">FOLLOWING</p>
+                </div>
+                
+                <div class="col-">
+                    <h3 class="followers">
+                        201
+                    </h3>
+                  <p class="text-muted">FOLLOWERS</p>
+                </div>
+        </div>
+</div>   
+    
+    <a href="#" class="btn btn-primary">Follow</a>
+  </div>
+  
+</div>
+
+{% endblock %}
